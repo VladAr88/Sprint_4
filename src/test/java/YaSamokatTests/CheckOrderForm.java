@@ -2,7 +2,6 @@ package YaSamokatTests;
 
 import YaSamokat.MainPage;
 import YaSamokat.OrderPage;
-import YaSamokat.Resources;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
@@ -39,7 +38,6 @@ public class CheckOrderForm extends BaseUITest {
 
     @Parameterized.Parameters // добавили аннотацию
     public static Object[][] scooterOrderDataData() {
-        Resources resources = new Resources();
         return new Object[][] {
                 { "Верхняя","Владимир", "Аранович","тестовый адрес", "89063174272", "1", "3", "3","black","тестовый комментарий"},
                 { "Нижняя","Юлия", "Аранович","тестовый адрес", "89053888261", "2", "5", "1","grey","тестовый комментарий 2"},
